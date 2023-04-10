@@ -1,0 +1,16 @@
+Transpose is a program that reads any number of blocks in a csv and 
+aggregates them into block.
+
+Used for cleaning Adobe Report Builders within an excel file.
+
+For example, a file in the form of 
+x,x,x,x,,y,y,y,y,,z,z,z,z
+
+and outputs
+
+x,x,x,x
+y,y,y,y
+z,z,z,z
+
+
+To use, provide the file as an arguement.

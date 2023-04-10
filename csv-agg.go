@@ -11,7 +11,7 @@ adobe report builder forces us to put data in blocks even if we eventually need 
 all the data. this will read each all blocks and combine them into one block. */
 var WRITER *os.File = os.Stdout
 
-//number of items within each block
+//number of columns within each block
 const STEPSIZE = 4
 
 func main() {
@@ -72,14 +72,3 @@ func readcsv(file string) [][]string {
 	return data
 }
 
-func readCsv(file string) []byte {
-	f, err := os.Open(file)
-	if err != nil {
-		return nil
-	}
-	defer f.Close()
-	info, _ := f.Stat()
-	data := make([]byte, info.Size())
-	f.Read(data)
-	return data
-}
