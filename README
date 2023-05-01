@@ -5,12 +5,16 @@ Used for cleaning Adobe Report Builder reports within an excel file.
 
 For example, a file in the form of 
 x,x,x,x,,y,y,y,y,,z,z,z,z
+a,a,a,a,,b,b,b,b,,c,c,c,c
 
-and outputs
+outputs
 
 x,x,x,x
 y,y,y,y
 z,z,z,z
+a,a,a,a
+b,b,b,b
+c,c,c,c
 
 
 To use, provide the file as an arguement.
